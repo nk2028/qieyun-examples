@@ -40,7 +40,7 @@ function 聲母規則() {
   if (is('清母')) return 'c';
   if (is('從母')) return is('平聲') ? 'c' : 'z';
   if (is('心母')) return 's';
-  if (is('邪母')) return is('平聲') ? 'c' : 'z'; // 塞擦音多於擦音
+  if (is('邪母')) return is('平聲') ? 'c' : is('合口') ? 's' : 'z';
 
   if (is('莊母')) return 'z';
   if (is('初母')) return 'c';
@@ -50,19 +50,26 @@ function 聲母規則() {
 
   if (is('章母')) return 'z';
   if (is('昌母')) return 'c';
-  if (is('常母')) return 's'; // 擦音多於塞擦音
+  if (is('常母')) return 's';
   if (is('書母')) return 's';
   if (is('船母')) return 's';
   if (is('日母')) return 'j';
 
   if (is('見母')) return 'g';
-  if (is('溪母')) return 'h'; // 多數擦化
+  if (is('溪母')) {
+    if (is('尤侵韻')) return 'j';
+    if (is('合口 二三四等')) return 'k';
+    return 'h';
+  }
   if (is('羣母')) return is('平聲') ? 'k' : 'g';
   if (is('疑母')) return 'ng'; // ng 拼細音時為 j，詳後
 
-  if (is('曉母')) return 'h';
+  if (is('曉母')) {
+    if (is('尤欣韻 平聲')) return 'j';
+    return 'h';
+  }
   if (is('匣母')) {
-    if (is('合口 或 模韻')) return 'j'; // 非 yu 前為 w，詳後
+    if (is('合口 或 模韻 或 四等') && !is('齊韻 開口')) return 'j'; // 非 yu 前為 w，詳後
     return 'h';
   }
   if (is('影云以母')) {
@@ -248,7 +255,7 @@ if (is('入聲') && 聲調 === '1' && is長元音(韻母)) 聲調 = '3';
 
 if (is('合口 或 模韻') && !['eo', 'oe', 'yu'].some((x) => 韻母.startsWith(x))) { // 合口字
   if (聲母 === 'g' && !韻母.startsWith('u')) 聲母 = 'gw';
-  else if (聲母 === 'k' && !韻母.startsWith('u')) 聲母 = 'kw';
+  else if (聲母 === 'k' && !韻母.startsWith('i')) 聲母 = 'kw';
   else if (聲母 === 'h' && !韻母.startsWith('i')) 聲母 = 'f';
   else if (聲母 === 'j') 聲母 = 'w';
   else if (聲母 === '') 聲母 = 'w';
