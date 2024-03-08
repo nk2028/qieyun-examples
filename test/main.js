@@ -19,6 +19,8 @@ import {
   fanwan,
   putonghua,
   gwongzau,
+  naamning,
+  naamningdingzi,
   zaonhe,
   langjin,
   taibu,
@@ -54,6 +56,8 @@ assert_equal(zhongyuan(音韻地位), "ʂjɛw³");
 assert_equal(fanwan(音韻地位), "shiu2");
 assert_equal(putonghua(音韻地位), "shǎo");
 assert_equal(gwongzau(音韻地位), "siu2");
+assert_equal(naamning(音韻地位), "siu2");
+assert_equal(naamningdingzi(音韻地位), "siu2");
 assert_equal(zaonhe(音韻地位), "sɔ̄");
 assert_equal(langjin(音韻地位), "shao³");
 assert_equal(taibu(音韻地位), "shau3");

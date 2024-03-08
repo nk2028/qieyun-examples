@@ -36,6 +36,8 @@ https://nk2028-1305783649.file.myqcloud.com/qieyun-examples/<filename>
 - 推導《分韻撮要》擬音 (Extrapolated Reconstruction of _Fan-Wan Tsʽüt-Iú_): `fanwan.js`
 - 推導普通話 (Extrapolated Putonghua): `putonghua.js`
 - 推導廣州音 (Extrapolated Cantonese): `gwongzau.js`
+- 推導南寧白話 (Extrapolated Nanning Dialect): `naamning.js`
+- 推導南寧亭子平話 (Extrapolated Nanning Tingzi Dialect): `naamningdingzi.js`
 - 推導上海話 (Extrapolated Shanghainese): `zaonhe.js`
 - 推導南京話 (Extrapolated Nankinese): `langjin.js`
 - 推導大埔話 (Extrapolated Taibu Hakka): `taibu.js`
