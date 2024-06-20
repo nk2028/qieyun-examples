@@ -13,6 +13,7 @@ https://nk2028-1305783649.file.myqcloud.com/qieyun-examples/<filename>
 **切韻音系拼音或轉寫 romanization/transcription of the Qieyun phonological system**
 
 - 切韻拼音 (Tshet-uinh Phonetic Alphabet): `tupa.js`
+- 切韻諺文 (Tshet-uinh Hangul): `tuh.js`
 - 白一平轉寫 (Baxter’s Transcription): `baxter.js`
 - 有女羅馬字 (Blankego’s Romanization): `blankego.js`
 - 古韻羅馬字 (Koxyonh’s Romanization): `kyonh.js`
